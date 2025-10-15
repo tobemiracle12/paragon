@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+/* Light theme (default) */
+:root {
+  --backgroundColor: #FFFFFF;
+ --primaryTextColor: #181818;
+ --secondaryTextColor: #716C80;
+  --customColor: #FE964D;
+  --secondaryCustomColor: #FFF7F1;
+
+}
+
+/* Dark theme overrides using Tailwind's `dark` class */
+.dark {
+  --backgroundColor: #FFFFFF;
+ --primaryTextColor: #181818;
+ --secondaryTextColor: #716C80;
+  --customColor: #FE964D;
+  --secondaryCustomColor: #FFF7F1;
+
+}
+
+/* Optional: remove this if you're not using system dark mode preference */
+@media (prefers-color-scheme: dark) {
+  /* Only applies if you're not controlling with `.dark` class */
+  /* Comment or remove this block if using `.dark` toggle */
+}
+
+/* Theme font variables (if used in Tailwind `theme`) */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Apply the background and foreground color */
+body {
+  background: var(--background);
+  color: var(--primaryTextColor);
+  font-family: Arial, Helvetica, sans-serif;
+  /* transition: background 0.3s, color 0.3s; */
+}
+
+
+/* --------------DASHBOARD STYLES-------------- */
+.dashboardHeaderCircles {
+  @apply w-10 h-10 bg-[var(--cardBackground)] rounded-full flex justify-center items-center mr-3 last:mr-0 cursor-pointer
+}
+/* --------------DASHBOARD STYLES-------------- */
+
+.contactInput {
+  @apply flex flex-col mb-4 w-full
+}
+.custom-container {
+  @apply max-w-[1300px] w-full px-2 sm:px-3;
+}
+
+.customContainer {
+  @apply max-w-[1300px] w-full px-2 sm:px-3;
+}
+
+.customHomeInput{
+  @apply mt-1 w-full rounded-md border border-gray-300 pr-2 py-2 focus:border-[var(--customTextColor)] focus:outline-none focus:ring-1 focus:ring-[var(--customTextColor)]
+}
+
+.homeButton{
+  @apply w-full text-center cursor-pointer rounded-md bg-[var(--customTextColor)] py-2 text-white hover:bg-[var(--customTextDarkColor)]
+}
+
+.homeInputLabel{
+  @apply block text-sm font-medium text-[var(--secondary-text-color)]
+}
+
+.navLinks{
+  @apply py-3 px-5 block lg:text-lg hover:bg-[var(--custom-light-color)]
+}
+
+.footerPill{
+  @apply mb-1 mr-1 cursor-pointer hover:bg-transparent transition duration-300 bg-[var(--customLightColor)] py-1 px-2 rounded-[5px]
+}
+
+.propertyPill{
+  @apply flex items-center text-white bg-green-600 hover:bg-green-600/50 cursor-pointer rounded-[5px] py-[2px] px-1
+}
+
+.selectList{
+  @apply border border-gray-300 p-2 rounded outline-0 py-3 px-2 cursor-pointer
+}
+
+.selectOption{
+  @apply border-b border-b-gray-300
+}
+
+.testimony .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 250px;
+}
+
+.testimony .swiper-backface-hidden .swiper-slide {
+    padding-bottom: 50px;
+}
+
+  .swiper-pagination-bullet {
+          background-color: #FFFFFF;
+          width: 10px;
+          height: 10px;
+          border-radius: 9999px;
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+
+
+        .swiper-pagination-bullet-active {
+          background-color: #FE964D; /* Tailwind orange */
+          width: 16px;
+          height: 16px;
+          box-shadow:#FFFFFF; /* subtle glow */
+        }
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 550px;
+}
+
