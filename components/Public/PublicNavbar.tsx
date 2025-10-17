@@ -45,9 +45,7 @@ export default function PublicNavbar() {
             </li>
             <li>
               <Link
-                className={`navLinks ${
-                  pathName === '/' ? 'bg-[var(--custom-light-color)]' : ''
-                }`}
+                className={`navLinks ${pathName === '/' ? 'bg-[#F35329]' : ''}`}
                 href={`/`}
               >
                 Home
@@ -56,11 +54,9 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/designs'
-                    ? 'bg-[var(--custom-light-color)]'
-                    : ''
+                  pathName === '/about' ? 'bg-[#F35329]' : ''
                 }`}
-                href={`/designs`}
+                href={`/about`}
               >
                 About
               </Link>
@@ -68,7 +64,7 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/pages' ? 'bg-[var(--custom-light-color)]' : ''
+                  pathName === '/pages' ? 'bg-[#F35329]' : ''
                 }`}
                 href={`/pages`}
               >
@@ -78,9 +74,7 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/services'
-                    ? 'bg-[var(--custom-light-color)]'
-                    : ''
+                  pathName === '/services' ? 'bg-[#F35329]' : ''
                 }`}
                 href={`/services`}
               >
@@ -90,9 +84,7 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/contact'
-                    ? 'bg-[var(--custom-light-color)]'
-                    : ''
+                  pathName === '/contact' ? 'bg-[#F35329]' : ''
                 }`}
                 href={`/contact`}
               >
@@ -102,7 +94,7 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/blog' ? 'bg-[var(--custom-light-color)]' : ''
+                  pathName === '/blog' ? 'bg-[#F35329]' : ''
                 }`}
                 href={`/blog`}
               >
@@ -112,9 +104,7 @@ export default function PublicNavbar() {
             <li className="ml-auto">
               <Link
                 className={`navLinks ${
-                  pathName === '/sign-up'
-                    ? 'bg-[var(--custom-light-color)]'
-                    : ''
+                  pathName === '/sign-up' ? 'bg-[#F35329]' : ''
                 }`}
                 href={`/sign-up`}
               >
@@ -141,7 +131,7 @@ export default function PublicNavbar() {
           <li className="ml-auto">
             <Link
               className={`navLinks ${
-                pathName === '/sign-up' ? 'bg-[var(--custom-light-color)]' : ''
+                pathName === '/sign-up' ? 'bg-[#F35329]' : ''
               }`}
               href={`/sign-up`}
             >
@@ -149,10 +139,7 @@ export default function PublicNavbar() {
             </Link>
           </li>
           <li>
-            <Link
-              className={`navLinks bg-[var(--custom-light-color)]`}
-              href={`/sign-in`}
-            >
+            <Link className={`navLinks bg-[#F35329]`} href={`/sign-in`}>
               Sign In
             </Link>
           </li>
