@@ -4,36 +4,50 @@ import Hero from '@/components/Public/Hero'
 import Image from 'next/image'
 import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { CameraIcon } from '@heroicons/react/24/solid'
-import { BsCamera, BsCameraFill } from 'react-icons/bs'
-import {
-  BathIcon,
-  BedDouble,
-  Heart,
-  LandPlot,
-  ShowerHead,
-  ShowerHeadIcon,
-  VideoIcon,
-} from 'lucide-react'
-import FeatureHomes from '@/components/Public/FeatureHomes'
+
+import {} from 'lucide-react'
 import HeroSearchBar from '@/components/Public/HeroSearchBar'
 export default function Contact() {
   return (
     <div>
       {/* ///////CONTACT SECTION//////////// */}
-      <div className="flex  justify-center bg-[url('/blogImage1.jpg')] bg-fixed bg-cover bg-no-repeat bg-center">
-        <div className="flex w-full bg-green-500/40 py-[100px] justify-center">
-          <div className="customContainer">
-            <div className="flex text-white text-[40px]">Contact</div>
+      <div className="relative">
+        <Image
+          src="/poultryImage34.jpg"
+          sizes="100vw"
+          className="h-full w-full object-cover absolute z-0"
+          width={0}
+          height={0}
+          alt="paragon"
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-0" />
+        <div className="flex w-full justify-center">
+          <div className="customContainer relative z-10">
+            <div className="flex items-center flex-col z-20 min-h-[45vh] justify-center">
+              <div className="text-white md:text-[35px] text-[28px] font-bold mb-[8px]">
+                Poultry Farm Contact us
+              </div>
+              <div className="flex items-center">
+                <Link
+                  href={'/'}
+                  className="text-white text-[17px] mb-[3px] mr-1"
+                >
+                  Home /
+                </Link>
+                <div className="text-[var(--customColor)] text-[17px]">
+                  Contact us
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* ////CONTACT SECTION2 //// */}
-      <div className="flex py-[60px] bg-[var(--widgetBackground)] justify-center">
+      <div className="flex py-[60px] bg-[var(--BackgroundColor)] justify-center">
         <div className="customContainer">
-          <div className="bg-white p-[40px]">
-            <div className="grid grid-cols-2 mb-10 w-full gap-9">
+          <div className="md:bg-[var(--secondaryCustomColor)] bg-transparent md:p-[40px] px-[10px]">
+            <div className="grid md:grid-cols-2 mb-10 w-full gap-9">
               <div className="flex flex-col items-start">
                 <div className="contactInput">
                   <label className="mb-1" htmlFor="">

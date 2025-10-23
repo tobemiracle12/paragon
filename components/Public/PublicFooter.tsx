@@ -15,14 +15,14 @@ export default function PublicFooter() {
           alt="paragon"
         />
         <div className="customContainer">
-          <div className="grid grid-cols-4 w-full">
-            <div className="flex flex-col">
+          <div className="grid md:grid-cols-4 w-full px-[10px]">
+            <div className="flex flex-col mb-8 md:mb-0">
               <Image
                 style={{ height: 'auto' }}
                 src="/paragonLogo.png"
                 loading="lazy"
                 sizes="100vw"
-                className="sm:w-70 w-30 mb-4"
+                className="sm:w-70 w-[250px] mb-4"
                 width={0}
                 height={0}
                 alt="Paragon Logo"
@@ -36,7 +36,7 @@ export default function PublicFooter() {
                 with technology quickly.
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-8 md:mb-0">
               <div className="text-[var(--primaryTextColor)] text-[26px] font-bold mb-4">
                 Keep In Touch
               </div>
@@ -74,7 +74,7 @@ export default function PublicFooter() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-8 md:mb-0">
               <div className="text-[var(--primaryTextColor)] text-[26px] font-bold mb-4">
                 Poultry Farm Product
               </div>
@@ -119,11 +119,11 @@ export default function PublicFooter() {
               <div className="text-[var(--primaryTextColor)] text-[28px] mb-4 font-bold">
                 Instagram Feed
               </div>
-              <div className="grid grid-cols-3 gap-3 w-full">
+              <div className="grid grid-cols-3 md:gap-3 gap-3 w-full">
                 <Image
                   src="/poultryImage14.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -131,7 +131,7 @@ export default function PublicFooter() {
                 <Image
                   src="/poultryImage19.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -139,7 +139,7 @@ export default function PublicFooter() {
                 <Image
                   src="/poultryImage18.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -147,7 +147,7 @@ export default function PublicFooter() {
                 <Image
                   src="/poultryImage17.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -155,7 +155,7 @@ export default function PublicFooter() {
                 <Image
                   src="/poultryImage16.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -163,7 +163,7 @@ export default function PublicFooter() {
                 <Image
                   src="/poultryImage15.jpg"
                   sizes="100vw"
-                  className="h-[80px] w-[85px]"
+                  className="h-[80px] w-full"
                   width={0}
                   height={0}
                   alt="real"
@@ -175,7 +175,7 @@ export default function PublicFooter() {
       </div>
       <div className="flex justify-center py-[50px] bg-[var(--backgroundColor)]">
         <div className="customContainer">
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-wrap">
             <i className="bi bi-c-circle mr-1"></i>
             <div className="text-[var(--primaryCustomColor)] mr-2 font-bold">
               2020

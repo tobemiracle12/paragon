@@ -33,14 +33,14 @@ export default function Hero() {
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0" />
           <div className="flex w-full justify-center">
             <div className="customContainer relative z-10">
-              <div className="flex items-center flex-col z-20 min-h-[80vh] justify-center">
-                <div className="text-white text-[48px] font-bold mb-[5px]">
+              <div className="flex lg:text-[48px] text-2xl items-center flex-col z-20 min-h-[80vh] justify-center text-center">
+                <div className="text-white text-4xl lg:text-5xl font-bold mb-5 lg:mb-[5px]">
                   Fresh Killed Poultry
                 </div>
-                <div className="text-white text-[48px] mb-[3px] font-semibold/10">
+                <div className="text-white mb-[3px] font-semibold/10">
                   Chikens Specialty Game Meats
                 </div>
-                <div className="text-white text-[48px] mb-5 font-semibold/10">
+                <div className="text-white mb-10 lg:mb-5 font-semibold/10">
                   Eggs And More!!!
                 </div>
                 <Link
@@ -65,19 +65,19 @@ export default function Hero() {
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0" />
           <div className="flex w-full justify-center">
             <div className="customContainer relative z-10">
-              <div className="flex items-center flex-col z-20 min-h-[80vh] justify-center">
-                <div className="text-white text-[48px] font-bold mb-[5px]">
+              <div className="flex lg:text-[48px] text-2xl items-center flex-col z-20 min-h-[80vh] justify-center">
+                <div className="text-white text-4xl lg:text-5xl font-bold mb-5 lg:mb-[5px]">
                   Fresh Killed Poultry
                 </div>
-                <div className="text-white text-[48px] mb-[3px] font-semibold/10">
+                <div className="text-white mb-[3px] font-semibold/10">
                   Chikens Specialty Game Meats
                 </div>
-                <div className="text-white text-[48px] mb-5 font-semibold/10">
+                <div className="text-white mb-10 lg:mb-5 font-semibold/10">
                   Eggs And More!!!
                 </div>
                 <Link
                   href={'/'}
-                  className="text-white rounded bg-[var(--customColor)] text-[13px] z-20 px-[20px] py-[10px] font-bold"
+                  className="text-white rounded bg-[var(--customColor)] text-[13px] px-[20px] py-[10px] font-bold"
                 >
                   DICOVER NOW
                 </Link>
@@ -97,19 +97,19 @@ export default function Hero() {
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0" />
           <div className="flex w-full justify-center">
             <div className="customContainer relative z-10">
-              <div className="flex items-center flex-col z-20 min-h-[80vh] justify-center">
-                <div className="text-white text-[48px] font-bold mb-[5px]">
+              <div className="flex lg:text-[48px] text-2xl items-center flex-col z-20 min-h-[80vh] justify-center">
+                <div className="text-white text-4xl lg:text-5xl font-bold mb-5 lg:mb-[5px]">
                   Fresh Killed Poultry
                 </div>
-                <div className="text-white text-[48px] mb-[3px] font-semibold/10">
+                <div className="text-white mb-[3px] font-semibold/10">
                   Chikens Specialty Game Meats
                 </div>
-                <div className="text-white text-[48px] mb-5 font-semibold/10">
+                <div className="text-white mb-10 lg:mb-5 font-semibold/10">
                   Eggs And More!!!
                 </div>
                 <Link
                   href={'/'}
-                  className="text-white rounded bg-[var(--customColor)] text-[13px] z-20 px-[20px] py-[10px] font-bold"
+                  className="text-white rounded bg-[var(--customColor)] text-[13px] px-[20px] py-[10px] font-bold"
                 >
                   DICOVER NOW
                 </Link>

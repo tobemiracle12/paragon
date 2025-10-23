@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex w-full justify-center">
           <div className="customContainer relative z-10">
             <div className="flex items-center flex-col z-20 min-h-[45vh] justify-center">
-              <div className="text-white text-[35px] font-bold mb-[8px]">
+              <div className="text-white md:text-[35px] text-[28px] font-bold mb-[8px]">
                 Poultry Farm About us
               </div>
               <div className="flex items-center">
@@ -49,7 +49,7 @@ export default function Home() {
       {/* ///About Blog2/// */}
       <div className="flex bg-[var(--backgroundColor)] justify-center pb-[100px]">
         <div className="customContainer text-center">
-          <div className="grid grid-cols-4 gap-5 w-full">
+          <div className="grid md:grid-cols-4 gap-5 w-full">
             <div className="flex flex-col items-center  py-20 px-8 border-[3px] border-gray-100/40">
               <Image
                 src="/poultryImage29.jpg"
@@ -126,15 +126,15 @@ export default function Home() {
       <div className="flex py-[100px] bg-[var(--secondaryCustomColor)] justify-center">
         <div className="customContainer">
           <div className="flex flex-col">
-            <div className="flex flex-col">
-              <div className="text-[var(--primaryTextColor)] text-[40px] font-bold">
+            <div className="flex flex-col ">
+              <div className="text-[var(--primaryTextColor)] md:text-[40px] text-[30px] font-bold">
                 History
               </div>
-              <div className="text-[var(--primaryTextColor)] text-[55px] mb-8 font-bold">
+              <div className="text-[var(--primaryTextColor)] md:text-[55px] text-[40px] mb-8 font-bold">
                 30 Years Farm Traditions
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
               <div className="flex flex-col col-span-2 bg-[var(--backgroundColor)] py-6 px-6">
                 <Image
                   src="/poultryImage35.jpg"
@@ -144,7 +144,7 @@ export default function Home() {
                   height={0}
                   alt="real"
                 />
-                <div className="flex">
+                <div className="flex flex-wrap">
                   <div className="flex flex-col mr-9">
                     <div className="text-[40px] text-[var(--primaryTextColor)] font-semibold">
                       Since
@@ -241,25 +241,31 @@ export default function Home() {
       {/* ////TESTIMONIAL SECTION//// */}
       <Testimonial />
 
-      {/* ////PARTNER SECTION////
+      {/* ////PARTNER SECTION//// */}
       <div className="flex py-[90px] bg-[var(--secondaryCustomColor)] justify-center">
         <div className="customContainer">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
-            spaceBetween={0}
-            slidesPerView={5}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            spaceBetween={10}
+            slidesPerView={5} // Default for desktop
             slidesPerGroup={1}
             loop={true}
+            speed={800} // Smooth transition speed (in ms)
+            breakpoints={{
+              0: { slidesPerView: 2 }, // 📱 Mobile (2 slides)
+              640: { slidesPerView: 3 }, // 📱 Tablets (3 slides)
+              1024: { slidesPerView: 5 }, // 💻 Desktops (5 slides)
+            }}
             className="w-full"
           >
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage24.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -267,11 +273,11 @@ export default function Home() {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage25.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -279,11 +285,11 @@ export default function Home() {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage26.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -291,11 +297,11 @@ export default function Home() {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage27.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -303,11 +309,11 @@ export default function Home() {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage28.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -315,11 +321,11 @@ export default function Home() {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link href="/" className="">
+              <Link href="/" className="w-full">
                 <Image
                   src="/poultryImage28.jpg"
                   sizes="100vw"
-                  className="h-auto w-auto"
+                  className="h-auto w-[120px]"
                   width={0}
                   height={0}
                   alt="real"
@@ -328,7 +334,7 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }

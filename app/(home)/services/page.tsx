@@ -1,26 +1,12 @@
 'use client'
-import Link from 'next/link'
-import Hero from '@/components/Public/Hero'
+import React from 'react'
 import Image from 'next/image'
-import { Navigation, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { CameraIcon } from '@heroicons/react/24/solid'
-import { BsCamera, BsCameraFill } from 'react-icons/bs'
-import {
-  BathIcon,
-  BedDouble,
-  Heart,
-  LandPlot,
-  ShowerHead,
-  ShowerHeadIcon,
-  VideoIcon,
-} from 'lucide-react'
-import FeatureHomes from '@/components/Public/FeatureHomes'
-import HeroSearchBar from '@/components/Public/HeroSearchBar'
-export default function Contact() {
+import Link from 'next/link'
+
+function services() {
   return (
     <div>
-      {/* ///////MAIN BLOG1 SECTION//////////// */}
+      {/* ///Services Blog1/// */}
       <div className="relative">
         <Image
           src="/poultryImage34.jpg"
@@ -35,7 +21,7 @@ export default function Contact() {
           <div className="customContainer relative z-10">
             <div className="flex items-center flex-col z-20 min-h-[45vh] justify-center">
               <div className="text-white  md:text-[35px] text-[28px] font-bold mb-[8px]">
-                Poultry Farm Services
+                Poultry Farm Blog
               </div>
               <div className="flex items-center">
                 <Link
@@ -44,16 +30,14 @@ export default function Contact() {
                 >
                   Home /
                 </Link>
-                <div className="text-[var(--customColor)] text[17px]">
-                  Services
-                </div>
+                <div className="text-[var(--customColor)] text[17px]">Blog</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ///////MAIN BLOG2 SECTION//////////// */}
+      {/* ///Services Blog2/// */}
       <div className="flex py-[130px] bg-[var(--backgroundColor)] justify-center">
         <div className="customContainer">
           <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-7">
@@ -354,3 +338,5 @@ export default function Contact() {
     </div>
   )
 }
+
+export default services

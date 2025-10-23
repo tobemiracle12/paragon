@@ -10,6 +10,7 @@
  --secondaryTextColor: #716C80;
   --customColor: #FE964D;
   --secondaryCustomColor: #FFF7F1;
+  --customRedColor:#F35329;
 
 }
 
@@ -122,3 +123,7 @@ body {
     top: 550px;
 }
 
+.nextjs-toast {
+    display: none !important;
+    opacity: 0 !important;
+}

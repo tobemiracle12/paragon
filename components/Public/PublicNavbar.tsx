@@ -64,11 +64,11 @@ export default function PublicNavbar() {
             <li>
               <Link
                 className={`navLinks ${
-                  pathName === '/pages' ? 'bg-[#F35329]' : ''
+                  pathName === '/products' ? 'bg-[#F35329]' : ''
                 }`}
-                href={`/pages`}
+                href={`/products`}
               >
-                Pages
+                Products
               </Link>
             </li>
             <li>
@@ -99,6 +99,16 @@ export default function PublicNavbar() {
                 href={`/blog`}
               >
                 Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`navLinks ${
+                  pathName === '/faq' ? 'bg-[#F35329]' : ''
+                }`}
+                href={`/faq`}
+              >
+                Faq
               </Link>
             </li>
             <li className="ml-auto">
