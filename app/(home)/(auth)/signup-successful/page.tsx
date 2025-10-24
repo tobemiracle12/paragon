@@ -1,4 +1,4 @@
-;`"use client"`
+'use client'
 import { generateMetadata } from '@/lib/seo'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
