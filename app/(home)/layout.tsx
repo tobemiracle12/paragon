@@ -16,7 +16,7 @@ export default function HomeLayout({
       {children}
 
       <Link
-        href={'/'}
+        href={'/check-out'}
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="flex justify-center items-center fixed cursor-pointer bottom-4 right-4 bg-[var(--customColor)]  text-white md:w-15 md:h-15 w-10 h-10 z-50 rounded shadow-lg transition"
         aria-label="Scroll to Top"

@@ -452,7 +452,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <div className="flex flex-col text-center max-w-[450px]">
             <div className="text-[30px] text-[var(--primaryTextColor)] mb-2 font-bold">
-              Poultry Farm Products
+              Poultry Farm Gallery
             </div>
             <div className="text-[16px] text-[var(--secondaryTextColor)] mb-18 px-2">
               Conveniently customize proactive web services for leveraged
