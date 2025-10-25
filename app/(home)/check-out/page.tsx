@@ -42,16 +42,16 @@ function CheckOut() {
       {/*//// Check-Out Section 2////*/}
       <div className="flex py-[100px] justify-center bg-[var(--backgroundColor)]">
         <div className="customContainer">
-          <div className="flex flex-col items-center flex-wrap">
+          <div className="flex flex-col items-center ">
             <div className="mb-4 max-w-[800px]">
               <div className="flex px-7 py-8 flex-col shadow-sm mb-6">
-                <div className="flex items-center">
-                  <div className="flex flex-col">
+                <div className="flex items-center flex-wrap ">
+                  <div className="flex md:flex-col items-center mb-3 md:mb-0">
                     <div className="mb-3">
                       <Image
                         src="/poultryImage16.jpg"
                         sizes="100vw"
-                        className="h-[70px] w-[70px]"
+                        className="md:h-[70px] h-[85px] md:w-[70px] w-[85px] md:mr-0 mr-4"
                         width={0}
                         height={0}
                         alt="real"
@@ -61,30 +61,27 @@ function CheckOut() {
                       Crate of Egg
                     </div>
                   </div>
-                  <div className="flex">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
                     <div className="flex text-[20px] mr-4 border-r-gray-300 border-r pr-[16px]">
-                      <div className="flex w-full justify-evenly">
-                        <div className="flex justify-center h-[30px] w-[35px] cursor-pointer items-center border border-gray-200 rounded-[5px]">
-                          <i className="bi bi-dash text-[var(--primaryTextColor)]"></i>
-                        </div>
-                        <div className="text-[var(--primaryTextColor)] px-3">
-                          <span className="mr-2">Qty</span>
-                          <span>4</span>
-                        </div>
-                        <div className="flex justify-center h-[30px] w-[35px] cursor-pointer items-center border border-gray-200 rounded-[5px]">
-                          <i className="bi bi-plus text-[var(--primaryTextColor)]"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex text-[20px] mr-4 border-r-gray-300 border-r pr-[16px]">
-                      <span className="mr-2">Price</span>
+                      <span className="mr-2 ">Price</span>
                       <span>N5000</span>
                     </div>
                     <div className="flex text-[20px] mr-4">
                       <span className="mr-2">Total</span>
-                    </div>
-                    <div className="flex text-[20px]">
                       <span className="mr-2">N5000</span>
+                    </div>
+
+                    <div className="flex w-full text-[20px]">
+                      <div className="flex justify-center h-[30px] w-[35px] cursor-pointer items-center border border-gray-200 rounded-[5px]">
+                        <i className="bi bi-dash text-[var(--primaryTextColor)]"></i>
+                      </div>
+                      <div className="text-[var(--primaryTextColor)] px-3">
+                        <span className="mr-2">Qty</span>
+                        <span>4</span>
+                      </div>
+                      <div className="flex justify-center h-[30px] w-[35px] cursor-pointer items-center border border-gray-200 rounded-[5px]">
+                        <i className="bi bi-plus text-[var(--primaryTextColor)]"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
